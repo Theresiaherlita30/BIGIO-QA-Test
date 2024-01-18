@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.11.2 on win32)" generated="20240118 19:45:12.938" rpa="false">
+<suite id="s1" name="ProyekBIGIO" source="C:\Users\ASUS\Documents\Perkuliahan\SEMESTER 5\JAVA EE\UTS\ProyekBIGIO">
+<suite id="s1-s1" name="Testsuite" source="C:\Users\ASUS\Documents\Perkuliahan\SEMESTER 5\JAVA EE\UTS\ProyekBIGIO\testsuite">
+<suite id="s1-s1-s1" name="Login" source="C:\Users\ASUS\Documents\Perkuliahan\SEMESTER 5\JAVA EE\UTS\ProyekBIGIO\testsuite\Login.robot">
+<test id="s1-s1-s1-t1" name="LoginSeleniumTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://karuniasipoholon.com/auth</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20240118 19:45:13.520" level="INFO">Opening browser 'chrome' to base url 'https://karuniasipoholon.com/auth'.</msg>
+<status status="PASS" starttime="20240118 19:45:13.519" endtime="20240118 19:45:21.780"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20240118 19:45:21.781" endtime="20240118 19:45:21.790"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20240118 19:45:23.792" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240118 19:45:21.790" endtime="20240118 19:45:23.793"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="form_login"]/div[1]/input</arg>
+<arg>sinagatheresia30@gmail.com</arg>
+</arguments>
+<msg timestamp="20240118 19:45:23.795" level="INFO">Typing text 'sinagatheresia30@gmail.com' into text field '//*[@id="form_login"]/div[1]/input'.</msg>
+<status status="PASS" starttime="20240118 19:45:23.793" endtime="20240118 19:45:24.086"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="form_login"]/div[2]/div/input</arg>
+<arg>12345678</arg>
+</arguments>
+<msg timestamp="20240118 19:45:24.087" level="INFO">Typing password into text field '//*[@id="form_login"]/div[2]/div/input'.</msg>
+<msg timestamp="20240118 19:45:24.146" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20240118 19:45:24.228" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20240118 19:45:24.086" endtime="20240118 19:45:24.228"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="tombol_login"]</arg>
+</arguments>
+<msg timestamp="20240118 19:45:24.230" level="INFO">Clicking element '//*[@id="tombol_login"]'.</msg>
+<status status="PASS" starttime="20240118 19:45:24.229" endtime="20240118 19:45:24.316"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20240118 19:45:26.317" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240118 19:45:24.317" endtime="20240118 19:45:26.318"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@class="swal2-confirm btn btn-primary"]</arg>
+</arguments>
+<msg timestamp="20240118 19:45:26.320" level="INFO">Clicking element '//*[@class="swal2-confirm btn btn-primary"]'.</msg>
+<status status="PASS" starttime="20240118 19:45:26.318" endtime="20240118 19:46:24.384"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20240118 19:46:27.388" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240118 19:46:24.385" endtime="20240118 19:46:27.388"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240118 19:46:27.389" endtime="20240118 19:46:29.528"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test Completed</arg>
+</arguments>
+<msg timestamp="20240118 19:46:29.530" level="INFO">Test Completed</msg>
+<status status="PASS" starttime="20240118 19:46:29.529" endtime="20240118 19:46:29.530"></status>
+</kw>
+<status status="PASS" starttime="20240118 19:45:13.518" endtime="20240118 19:46:29.531" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20240118 19:45:13.099" endtime="20240118 19:46:29.533"></status>
+</suite>
+<status status="PASS" starttime="20240118 19:45:13.093" endtime="20240118 19:46:29.538"></status>
+</suite>
+<status status="PASS" starttime="20240118 19:45:13.061" endtime="20240118 19:46:29.544"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="ProyekBIGIO">ProyekBIGIO</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Testsuite">ProyekBIGIO.Testsuite</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="Login">ProyekBIGIO.Testsuite.Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
